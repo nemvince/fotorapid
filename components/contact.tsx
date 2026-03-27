@@ -8,12 +8,14 @@ import {
   IconSend,
 } from "@tabler/icons-react";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 
 export function Contact() {
+  const t = useTranslations("Contact");
   const [formState, setFormState] = useState({
     name: "",
     email: "",
@@ -26,7 +28,7 @@ export function Contact() {
     e.preventDefault();
     // Handle form submission
     console.log("Form submitted:", formState);
-    alert("Thank you for your inquiry! I'll get back to you within 24 hours.");
+    alert(t("successMessage"));
     setFormState({ name: "", email: "", phone: "", service: "", message: "" });
   };
 
@@ -39,14 +41,13 @@ export function Contact() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
           <div>
             <p className="text-sm tracking-[0.3em] uppercase text-background/60 mb-2">
-              Contact
+              {t("eyebrow")}
             </p>
             <h2 className="font-serif text-4xl md:text-5xl font-light mb-6">
-              Let&apos;s Work Together
+              {t("title")}
             </h2>
             <p className="text-background/70 leading-relaxed mb-10 max-w-md">
-              Ready to create something beautiful? Get in touch to discuss your
-              project. I typically respond within 24 hours.
+              {t("subtitle")}
             </p>
 
             <div className="space-y-6">
@@ -55,7 +56,7 @@ export function Contact() {
                   <IconMail className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-sm text-background/60">Email</p>
+                  <p className="text-sm text-background/60">{t("emailLabel")}</p>
                   <a
                     href="mailto:hello@csapokristof.com"
                     className="hover:text-primary transition-colors"
@@ -70,7 +71,7 @@ export function Contact() {
                   <IconPhone className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-sm text-background/60">Phone</p>
+                  <p className="text-sm text-background/60">{t("phoneLabel")}</p>
                   <a
                     href="tel:+36123456789"
                     className="hover:text-primary transition-colors"
@@ -85,8 +86,8 @@ export function Contact() {
                   <IconMapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-sm text-background/60">Location</p>
-                  <p>Budapest, Hungary</p>
+                  <p className="text-sm text-background/60">{t("locationLabel")}</p>
+                  <p>{t("locationValue")}</p>
                 </div>
               </div>
 
@@ -95,7 +96,7 @@ export function Contact() {
                   <IconCamera className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-sm text-background/60">Instagram</p>
+                  <p className="text-sm text-background/60">{t("instagramLabel")}</p>
                   <a
                     href="https://instagram.com/csapokristof"
                     target="_blank"
@@ -114,7 +115,7 @@ export function Contact() {
               <div className="grid sm:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <Label htmlFor="name" className="text-background/80">
-                    Name
+                    {t("nameLabel")}
                   </Label>
                   <Input
                     id="name"
@@ -122,14 +123,14 @@ export function Contact() {
                     onChange={(e) =>
                       setFormState({ ...formState, name: e.target.value })
                     }
-                    placeholder="Your name"
+                    placeholder={t("namePlaceholder")}
                     required
                     className="bg-background/10 border-background/20 text-background placeholder:text-background/40 focus:border-primary"
                   />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="email" className="text-background/80">
-                    Email
+                    {t("emailFieldLabel")}
                   </Label>
                   <Input
                     id="email"
@@ -148,7 +149,7 @@ export function Contact() {
               <div className="grid sm:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <Label htmlFor="phone" className="text-background/80">
-                    Phone (optional)
+                    {t("phoneFieldLabel")}
                   </Label>
                   <Input
                     id="phone"
@@ -157,13 +158,13 @@ export function Contact() {
                     onChange={(e) =>
                       setFormState({ ...formState, phone: e.target.value })
                     }
-                    placeholder="+36 123 456 789"
+                    placeholder={t("formPhonePlaceholder")}
                     className="bg-background/10 border-background/20 text-background placeholder:text-background/40 focus:border-primary"
                   />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="service" className="text-background/80">
-                    Service Interested In
+                    {t("serviceLabel")}
                   </Label>
                   <Input
                     id="service"
@@ -171,7 +172,7 @@ export function Contact() {
                     onChange={(e) =>
                       setFormState({ ...formState, service: e.target.value })
                     }
-                    placeholder="e.g., Wedding, Portrait"
+                    placeholder={t("servicePlaceholder")}
                     className="bg-background/10 border-background/20 text-background placeholder:text-background/40 focus:border-primary"
                   />
                 </div>
@@ -179,7 +180,7 @@ export function Contact() {
 
               <div className="space-y-2">
                 <Label htmlFor="message" className="text-background/80">
-                  Message
+                  {t("messageLabel")}
                 </Label>
                 <Textarea
                   id="message"
@@ -187,7 +188,7 @@ export function Contact() {
                   onChange={(e) =>
                     setFormState({ ...formState, message: e.target.value })
                   }
-                  placeholder="Tell me about your project, event date, location, and any specific requirements..."
+                  placeholder={t("messagePlaceholder")}
                   rows={5}
                   required
                   className="bg-background/10 border-background/20 text-background placeholder:text-background/40 focus:border-primary resize-none"
@@ -200,7 +201,7 @@ export function Contact() {
                 className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
               >
                 <IconSend className="w-4 h-4 mr-2" />
-                Send Message
+                {t("sendButton")}
               </Button>
             </form>
           </div>

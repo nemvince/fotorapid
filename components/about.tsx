@@ -1,6 +1,8 @@
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 
-export function About() {
+export async function About() {
+  const t = await getTranslations("About");
   return (
     <section id="about" className="py-12 md:py-24 bg-secondary/30">
       <div className="container mx-auto px-6 lg:px-12">
@@ -19,48 +21,34 @@ export function About() {
 
           <div>
             <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-2">
-              About
+              {t("eyebrow")}
             </p>
             <h2 className="font-serif text-4xl md:text-5xl font-light mb-6">
-              The Artist Behind the Lens
+              {t("title")}
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>
-                With over a decade of experience in professional photography,
-                I&apos;ve dedicated my craft to capturing the essence of every
-                moment. My approach combines technical precision with artistic
-                vision, creating images that transcend the ordinary.
-              </p>
-              <p>
-                Whether it&apos;s the intimate emotions of a wedding day, the
-                dynamic energy of a corporate event, or the subtle beauty of a
-                portrait session, I bring the same level of passion and
-                attention to detail to every project.
-              </p>
-              <p>
-                Based in Europe, I work with clients worldwide, bringing stories
-                to life through carefully composed frames and thoughtful
-                post-processing that enhances without overwhelming.
-              </p>
+              <p>{t("bio1")}</p>
+              <p>{t("bio2")}</p>
+              <p>{t("bio3")}</p>
             </div>
 
             <div className="grid grid-cols-3 gap-8 mt-10 pt-10 border-t border-border">
               <div>
-                <p className="text-3xl font-serif">99+</p>
+                <p className="text-3xl font-serif">{t("stat1Value")}</p>
                 <p className="text-sm text-muted-foreground mt-1">
-                  Years Experience
+                  {t("stat1Label")}
                 </p>
               </div>
               <div>
-                <p className="text-3xl font-serif">500.000+</p>
+                <p className="text-3xl font-serif">{t("stat2Value")}</p>
                 <p className="text-sm text-muted-foreground mt-1">
-                  Projects Completed
+                  {t("stat2Label")}
                 </p>
               </div>
               <div>
-                <p className="text-3xl font-serif">101%</p>
+                <p className="text-3xl font-serif">{t("stat3Value")}</p>
                 <p className="text-sm text-muted-foreground mt-1">
-                  Client Satisfaction
+                  {t("stat3Label")}
                 </p>
               </div>
             </div>

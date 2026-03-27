@@ -1,0 +1,143 @@
+{
+  "Navbar": {
+    "work": "Munkáim",
+    "about": "Rólam",
+    "pricing": "Árak",
+    "contact": "Kapcsolat",
+    "bookNow": "Foglalás"
+  },
+  "Hero": {
+    "eyebrow": "Professzionális Fotográfia",
+    "tagline": "Időtlen pillanatokat rögzítek, művészi látásmóddal. Minden kép egy történetet mesél el, minden fotó megőriz egy emléket.",
+    "bookSession": "Időpont foglalás",
+    "viewPortfolio": "Portfolio megtekintése"
+  },
+  "Gallery": {
+    "eyebrow": "Portfolio",
+    "title": "Válogatott Munkáim",
+    "subtitle": "Fedezd fel munkáimat a fotográfia különböző területein. Kattints bármelyik kategóriára a teljes gyűjtemény megtekintéséhez.",
+    "viewCollection": "Gyűjtemény megtekintése",
+    "photos": "Fotó",
+    "categories": {
+      "portrait": {
+        "name": "Portré",
+        "description": "Személyiség és érzelem megragadása"
+      },
+      "duo": {
+        "name": "Páros",
+        "description": "Bensőséges pillanatok két ember között"
+      },
+      "events": {
+        "name": "Rendezvény",
+        "description": "Céges és magán összejövetelek"
+      },
+      "interior": {
+        "name": "Enteriőr",
+        "description": "Építészeti és belsőépítészeti munkák bemutatása"
+      },
+      "misc": {
+        "name": "Egyéb",
+        "description": "Különböző témák és stílusok"
+      }
+    }
+  },
+  "About": {
+    "eyebrow": "Rólam",
+    "title": "A Lencse Mögött",
+    "bio1": "Több mint egy évtizedes professzionális fotográfiai tapasztalattal minden pillanat lényegét igyekszem megörökíteni. Megközelítésem ötvözi a technikai pontosságot a művészi látásmóddal, olyan képeket alkotva, amelyek túlmutatnak a hétköznapin.",
+    "bio2": "Legyen szó egy esküvői nap bensőséges érzelmeiről, egy céges rendezvény dinamikus energiájáról vagy egy portréfotózás finom szépségéről – minden projektbe ugyanolyan szenvedéllyel és aprólékossággal fektetem bele magam.",
+    "bio3": "Európában élek, de világ minden tájáról fogadok ügyfeleket. Gondosan komponált képkockákon és átgondolt utómunkán keresztül keltem életre történeteket.",
+    "stat1Value": "99+",
+    "stat1Label": "Év tapasztalat",
+    "stat2Value": "500.000+",
+    "stat2Label": "Elvégzett projekt",
+    "stat3Value": "101%",
+    "stat3Label": "Ügyfél-elégedettség"
+  },
+  "Pricing": {
+    "eyebrow": "Befektetés",
+    "title": "Fotózási Csomagok",
+    "subtitle": "Válaszd ki az igényeidnek legjobban megfelelő csomagot. Egyedi ajánlat kérésre elérhető.",
+    "includedTitle": "Minden Csomagban Benne Van",
+    "included1": "Professzionális bőrretusálás és finom testkorrekció az összes leadott képen",
+    "included2": "Gondosan válogatott képek precíz színgradeléssel és korrekcióval",
+    "addOnsTitle": "Kiegészítő Szolgáltatások",
+    "addOn1Name": "Utazás Budapesten kívül",
+    "addOn1Price": "100 Ft / km",
+    "addOn2Name": "Expressz kiszállítás 24 órán belül",
+    "addOn2Price": "10 000 - 30 000 Ft",
+    "customCta": "Egyedi igényeid vannak? Hozzunk létre egy személyre szabott csomagot, amely tökéletesen illeszkedik projektedhez.",
+    "customButton": "Egyedi Ajánlat Kérése",
+    "mostPopular": "Legnépszerűbb",
+    "inquireNow": "Érdeklődöm",
+    "packages": {
+      "portrait": {
+        "name": "Portréfotózás",
+        "priceNote": "alkalom",
+        "description": "Egyéni portrék, professzionális fejlövések vagy kisméretű termékfotózás.",
+        "deliverables": "15-25 szerkesztett kép",
+        "feature1": "1-2 órás fotózás kölcsönösen egyeztetett helyszínen és időpontban",
+        "feature2": "Nyugodt légkör a természetes, hiteles kifejezésekért",
+        "feature3": "Személyre szabott stílus az elképzeléseid szerint",
+        "feature4": "Az összes elkészített kép teljes válogatása, szerkesztése és retusálása",
+        "feature5": "Végleges képek kézbesítése 7 munkanapon belül"
+      },
+      "couple": {
+        "name": "Páros & Család",
+        "priceNote": "alkalom",
+        "description": "Ideális pároknak, családoknak, eljegyzési fotózáshoz vagy mérföldkő-ünneplésekhez.",
+        "deliverables": "25-40 szerkesztett kép",
+        "feature1": "1-2 órás fotózás kölcsönösen egyeztetett helyszínen és időpontban",
+        "feature2": "Közös kreatív irányítás, ha vannak konkrét ötleteid",
+        "feature3": "Professzionális útmutatás hangulatképekkel és koncepciókkal, ha szükséges",
+        "feature4": "A teljes fotózás válogatása, szerkesztése és retusálása",
+        "feature5": "Végleges képek kézbesítése 7 munkanapon belül"
+      },
+      "event": {
+        "name": "Rendezvényfotózás",
+        "priceNote": "fél nap / 100 000 Ft egész nap",
+        "description": "Koncertek, előadások, esküvők, szertartások és különleges alkalmak.",
+        "deliverables": "80-150 szerkesztett kép",
+        "feature1": "Kulcspillanatok és vendégek dokumentálása",
+        "feature2": "Átfogó tudósítás az egész rendezvény során",
+        "feature3": "Kreatív történetmesélés spontán és beállított fotókon keresztül",
+        "feature4": "Az összes kép teljes válogatása, szerkesztése és retusálása",
+        "feature5": "Végleges képek kézbesítése 10 munkanapon belül"
+      },
+      "interior": {
+        "name": "Enteriőr & Ingatlan",
+        "priceNote": "fél nap / 75 000 Ft egész nap",
+        "description": "Ingatlanlisták, kereskedelmi terek, irodák és építészeti fotográfia.",
+        "deliverables": "20-50 szerkesztett kép",
+        "feature1": "Több szög, professzionális megvilágítás és kompozíció",
+        "feature2": "Színhelyes, kiadványra kész végleges képek",
+        "feature3": "Végleges képek kézbesítése 7 munkanapon belül",
+        "feature4": "Egyedi árazás a projekt terjedelmétől függően"
+      }
+    }
+  },
+  "Contact": {
+    "eyebrow": "Kapcsolat",
+    "title": "Dolgozzunk Együtt",
+    "subtitle": "Készen állsz valami szépet alkotni? Vedd fel velem a kapcsolatot, hogy megbeszéljük a projektedet. Általában 24 órán belül válaszolok.",
+    "emailLabel": "E-mail",
+    "phoneLabel": "Telefon",
+    "locationLabel": "Helyszín",
+    "locationValue": "Budapest, Magyarország",
+    "instagramLabel": "Instagram",
+    "nameLabel": "Név",
+    "namePlaceholder": "A neved",
+    "emailFieldLabel": "E-mail",
+    "phoneFieldLabel": "Telefon (opcionális)",
+    "serviceLabel": "Érdeklő szolgáltatás",
+    "servicePlaceholder": "pl. Esküvő, Portré",
+    "messageLabel": "Üzenet",
+    "messagePlaceholder": "Mesélj a projektedről, az esemény dátumáról, helyszínéről és egyéb igényeidről...",
+    "sendButton": "Üzenet küldése",
+    "successMessage": "Köszönjük érdeklődésedet! 24 órán belül visszajelzek.",
+    "formPhonePlaceholder": "+36 20 123 4567"
+  },
+  "Footer": {
+    "rights": "Minden jog fenntartva."
+  }
+}

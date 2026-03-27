@@ -2,20 +2,23 @@
 
 import { IconMenu, IconX } from "@tabler/icons-react";
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Logo } from "./logo";
 import { ModeToggle } from "./theme-toggle";
-
-const navLinks = [
-  { name: "Work", href: "#work" },
-  { name: "About", href: "#about" },
-  { name: "Pricing", href: "#pricing" },
-  { name: "Contact", href: "#contact" },
-];
+import { LanguageToggle } from "./language-toggle";
 
 export function Navbar() {
+  const t = useTranslations("Navbar");
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const navLinks = [
+    { name: t("work"), href: "#work" },
+    { name: t("about"), href: "#about" },
+    { name: t("pricing"), href: "#pricing" },
+    { name: t("contact"), href: "#contact" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -69,13 +72,16 @@ export function Navbar() {
                   ?.scrollIntoView({ behavior: "smooth" })
               }
             >
-              Book Now
+              {t("bookNow")}
             </Button>
+            <LanguageToggle />
             <ModeToggle />
           </nav>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center">
+            <LanguageToggle />
+            <ModeToggle />
             <Button
               variant="ghost"
               size="icon"
@@ -87,7 +93,6 @@ export function Navbar() {
                 <IconMenu className="h-5 w-5" />
               )}
             </Button>
-            <ModeToggle />
           </div>
         </div>
       </div>
@@ -115,7 +120,7 @@ export function Navbar() {
                 setIsMobileMenuOpen(false);
               }}
             >
-              Book Now
+              {t("bookNow")}
             </Button>
           </nav>
         </div>

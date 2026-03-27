@@ -1,0 +1,143 @@
+{
+  "Navbar": {
+    "work": "Work",
+    "about": "About",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "bookNow": "Book Now"
+  },
+  "Hero": {
+    "eyebrow": "Professional Photography",
+    "tagline": "Capturing timeless moments with artistic vision. Every frame tells a story, every photo preserves a memory.",
+    "bookSession": "Book a Session",
+    "viewPortfolio": "View Portfolio"
+  },
+  "Gallery": {
+    "eyebrow": "Portfolio",
+    "title": "Selected Work",
+    "subtitle": "Explore my work across different photography disciplines. Click on any category to view the full collection.",
+    "viewCollection": "View Collection",
+    "photos": "Photos",
+    "categories": {
+      "portrait": {
+        "name": "Portrait",
+        "description": "Capturing personality and emotion"
+      },
+      "duo": {
+        "name": "Duo",
+        "description": "Intimate moments between two people"
+      },
+      "events": {
+        "name": "Events",
+        "description": "Corporate and private gatherings"
+      },
+      "interior": {
+        "name": "Interior",
+        "description": "Showcasing architectural and interior design"
+      },
+      "misc": {
+        "name": "Miscellaneous",
+        "description": "A variety of subjects and styles"
+      }
+    }
+  },
+  "About": {
+    "eyebrow": "About",
+    "title": "The Artist Behind the Lens",
+    "bio1": "With over a decade of experience in professional photography, I've dedicated my craft to capturing the essence of every moment. My approach combines technical precision with artistic vision, creating images that transcend the ordinary.",
+    "bio2": "Whether it's the intimate emotions of a wedding day, the dynamic energy of a corporate event, or the subtle beauty of a portrait session, I bring the same level of passion and attention to detail to every project.",
+    "bio3": "Based in Europe, I work with clients worldwide, bringing stories to life through carefully composed frames and thoughtful post-processing that enhances without overwhelming.",
+    "stat1Value": "99+",
+    "stat1Label": "Years Experience",
+    "stat2Value": "500.000+",
+    "stat2Label": "Projects Completed",
+    "stat3Value": "101%",
+    "stat3Label": "Client Satisfaction"
+  },
+  "Pricing": {
+    "eyebrow": "Investment",
+    "title": "Photography Packages",
+    "subtitle": "Select the package that best suits your needs. Custom packages available upon request.",
+    "includedTitle": "Included with Every Package",
+    "included1": "Professional skin retouching and subtle body refinement across all delivered images",
+    "included2": "Carefully curated selection with precise color grading and correction",
+    "addOnsTitle": "Additional Services",
+    "addOn1Name": "Travel outside Budapest",
+    "addOn1Price": "100 Ft / km",
+    "addOn2Name": "Express delivery within 24 hours",
+    "addOn2Price": "10,000 - 30,000 Ft",
+    "customCta": "Have specific requirements? Let us create a tailored package perfectly suited to your project.",
+    "customButton": "Request Custom Quote",
+    "mostPopular": "Most Popular",
+    "inquireNow": "Inquire Now",
+    "packages": {
+      "portrait": {
+        "name": "Portrait Session",
+        "priceNote": "per session",
+        "description": "Individual portraits, professional headshots, or small-scale product photography.",
+        "deliverables": "15-25 edited images",
+        "feature1": "1-2 hour session at a mutually agreed location and time",
+        "feature2": "Relaxed atmosphere for natural, authentic expressions",
+        "feature3": "Tailored styling to match your vision",
+        "feature4": "Full curation, editing, and retouching of all captured images",
+        "feature5": "Final images delivered within 7 business days"
+      },
+      "couple": {
+        "name": "Couple & Family",
+        "priceNote": "per session",
+        "description": "Ideal for couples, families, engagement sessions, or milestone celebrations.",
+        "deliverables": "25-40 edited images",
+        "feature1": "1-2 hour session at a mutually agreed location and time",
+        "feature2": "Collaborative creative direction if you have specific ideas",
+        "feature3": "Professional guidance with mood boards and concepts if needed",
+        "feature4": "Complete curation, editing, and retouching of the full session",
+        "feature5": "Final images delivered within 7 business days"
+      },
+      "event": {
+        "name": "Event Coverage",
+        "priceNote": "half-day / 100,000 Ft full-day",
+        "description": "Concerts, performances, weddings, ceremonies, and special occasions.",
+        "deliverables": "80-150 edited images",
+        "feature1": "Documentation of key moments and distinguished guests",
+        "feature2": "Comprehensive coverage throughout the entire event",
+        "feature3": "Creative storytelling through candid and composed shots",
+        "feature4": "Full curation, editing, and retouching of all deliverables",
+        "feature5": "Final images delivered within 10 business days"
+      },
+      "interior": {
+        "name": "Interior & Real Estate",
+        "priceNote": "half-day / 75,000 Ft full-day",
+        "description": "Property listings, commercial spaces, offices, and architectural photography.",
+        "deliverables": "20-50 edited images",
+        "feature1": "Multiple angles with professional lighting and composition",
+        "feature2": "Color-accurate, publication-ready final images",
+        "feature3": "Final images delivered within 7 business days",
+        "feature4": "Custom pricing available based on project scope"
+      }
+    }
+  },
+  "Contact": {
+    "eyebrow": "Contact",
+    "title": "Let's Work Together",
+    "subtitle": "Ready to create something beautiful? Get in touch to discuss your project. I typically respond within 24 hours.",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "locationLabel": "Location",
+    "locationValue": "Budapest, Hungary",
+    "instagramLabel": "Instagram",
+    "nameLabel": "Name",
+    "namePlaceholder": "Your name",
+    "emailFieldLabel": "Email",
+    "phoneFieldLabel": "Phone (optional)",
+    "serviceLabel": "Service Interested In",
+    "servicePlaceholder": "e.g., Wedding, Portrait",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Tell me about your project, event date, location, and any specific requirements...",
+    "sendButton": "Send Message",
+    "successMessage": "Thank you for your inquiry! I'll get back to you within 24 hours.",
+    "formPhonePlaceholder": "+36 20 123 4567"
+  },
+  "Footer": {
+    "rights": "All rights reserved."
+  }
+}

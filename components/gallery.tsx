@@ -3,14 +3,13 @@
 import { IconChevronLeft, IconChevronRight, IconX } from "@tabler/icons-react";
 import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 
-// Category data with multiple images per category
+// Category data — non-translatable parts only
 const categories = [
   {
     id: "portrait",
-    name: "Portrait",
-    description: "Capturing personality and emotion",
     coverImage: "/images/samples/portrait/portre2.jpg",
     images: [
       { src: "/images/samples/portrait/portre2.jpg", alt: "Portrait 2" },
@@ -28,8 +27,6 @@ const categories = [
   },
   {
     id: "duo",
-    name: "Duo",
-    description: "Intimate moments between two people",
     coverImage: "/images/samples/duo/paros2.jpg",
     images: [
       { src: "/images/samples/duo/paros2.jpg", alt: "Duo 2" },
@@ -39,8 +36,6 @@ const categories = [
   },
   {
     id: "events",
-    name: "Events",
-    description: "Corporate and private gatherings",
     coverImage: "/images/samples/event/rendezveny4.jpg",
     images: [
       { src: "/images/samples/event/rendezveny4.jpg", alt: "Event 4" },
@@ -53,8 +48,6 @@ const categories = [
   },
   {
     id: "interior",
-    name: "Interior",
-    description: "Showcasing architectural and interior design",
     coverImage: "/images/samples/interior/enterior2.jpg",
     images: [
       { src: "/images/samples/interior/enterior2.jpg", alt: "Interior 2" },
@@ -64,8 +57,6 @@ const categories = [
   },
   {
     id: "misc",
-    name: "Miscellaneous",
-    description: "A variety of subjects and styles",
     coverImage: "/images/samples/misc/egyeb1.jpg",
     images: [
       { src: "/images/samples/misc/egyeb1.jpg", alt: "Misc 1" },
@@ -79,6 +70,7 @@ const categories = [
 ];
 
 export function GalleryCarousel() {
+  const t = useTranslations("Gallery");
   const sectionRef = useRef<HTMLElement>(null);
   const [visibleCategories, setVisibleCategories] = useState<Set<number>>(
     new Set(),
@@ -214,7 +206,7 @@ export function GalleryCarousel() {
                   : "opacity-0 translate-y-4"
               }`}
             >
-              Portfolio
+              {t("eyebrow")}
             </p>
             <h2
               className={`font-serif text-4xl md:text-6xl font-light transition-all duration-700 delay-100 ${
@@ -223,7 +215,7 @@ export function GalleryCarousel() {
                   : "opacity-0 translate-y-4"
               }`}
             >
-              Selected Work
+              {t("title")}
             </h2>
             {/* Animated underline */}
             <div className="flex justify-center">
@@ -240,8 +232,7 @@ export function GalleryCarousel() {
                   : "opacity-0 translate-y-4"
               }`}
             >
-              Explore my work across different photography disciplines. Click on
-              any category to view the full collection.
+              {t("subtitle")}
             </p>
           </div>
 
@@ -272,20 +263,20 @@ export function GalleryCarousel() {
 
                 <div className="absolute top-4 right-4">
                   <span className="px-3 py-1.5 text-xs tracking-wider bg-background/90 backdrop-blur-sm rounded-full text-foreground font-medium">
-                    {category.images.length} Photos
+                    {category.images.length} {t("photos")}
                   </span>
                 </div>
 
                 <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
                   <h3 className="font-serif text-2xl md:text-3xl text-background mb-2 group-hover:translate-x-2 transition-transform duration-300">
-                    {category.name}
+                    {t(`categories.${category.id}.name`)}
                   </h3>
                   <p className="text-background/70 text-sm md:text-base mb-4 group-hover:translate-x-2 transition-transform duration-300 delay-75">
-                    {category.description}
+                    {t(`categories.${category.id}.description`)}
                   </p>
 
                   <div className="flex items-center gap-2 text-background opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 delay-100">
-                    <span className="text-sm font-medium">View Collection</span>
+                    <span className="text-sm font-medium">{t("viewCollection")}</span>
                     <IconChevronRight className="w-4 h-4" />
                   </div>
                 </div>
@@ -325,7 +316,7 @@ export function GalleryCarousel() {
           {/* Category title */}
           <div className="absolute top-6 left-6 z-10">
             <p className="text-background/60 text-sm tracking-wider uppercase mb-1">
-              {selectedCategory.name}
+              {t(`categories.${selectedCategory.id}.name`)}
             </p>
             <p className="text-background text-sm">
               {currentImageIndex + 1} / {selectedCategory.images.length}

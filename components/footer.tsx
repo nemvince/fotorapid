@@ -3,9 +3,11 @@ import {
   IconBrandInstagram,
   IconBrandLinkedin,
 } from "@tabler/icons-react";
+import { getTranslations } from "next-intl/server";
 import { Logo } from "./logo";
 
-export function Footer() {
+export async function Footer() {
+  const t = await getTranslations("Footer");
   const currentYear = new Date().getFullYear();
 
   return (
@@ -45,7 +47,7 @@ export function Footer() {
           </div>
 
           <p className="text-sm text-background/60">
-            © {currentYear} Csapo Kristof Photography. All rights reserved.
+            © {currentYear} Csapo Kristof Photography. {t("rights")}
           </p>
         </div>
       </div>
