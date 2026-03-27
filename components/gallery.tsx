@@ -252,7 +252,7 @@ export function GalleryCarousel() {
               >
                 <Image
                   src={category.coverImage}
-                  alt={category.name}
+                  alt={t(`categories.${category.id}.name`)}
                   fill
                   className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                 />
